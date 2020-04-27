@@ -69,7 +69,7 @@ If the player chooses to play the game once more they will be brought back to th
 
 ## Design & Planning Process
 
-![planning1](./docs/planning.jpg)
+![planning1](./docs/Planning.jpg)
 
 ![palnning2](./docs/Diagram.png)
 

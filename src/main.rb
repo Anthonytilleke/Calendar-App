@@ -52,7 +52,6 @@ class Hangman
         exit
     end
     clean_terminal
-
   end
 
   def word
@@ -81,9 +80,7 @@ class Hangman
           puts "Invalid choice, please try again.".colorize(:red)
       end
     end
-  
     clean_terminal
-  
   end
 
 
@@ -104,7 +101,6 @@ class Hangman
     @word_teaser = new_teaser.join(' ')
   end
 
-
   def make_guess 
     if @lives > 0
       puts "The Hidden word has #{@word.size} letters."
@@ -122,7 +118,6 @@ class Hangman
         puts "Good guess! #{guess.upcase} is in the hidden word".colorize(:green)
 
         print_teaser guess
-        
         
         if @word == @word_teaser.split.join
           
@@ -147,7 +142,6 @@ class Hangman
         puts "Unlucky, you have #{@lives} lives remaining!".colorize(:light_red)
         puts "#{guess.upcase} is not in the hidden word".colorize(:light_red)
         
-
         print_teaser
         make_guess  
       end
@@ -162,7 +156,6 @@ class Hangman
       else
         begin_game
       end
-      
     end
   end
 
@@ -181,9 +174,6 @@ class Hangman
     m1
     make_guess
   end
-
-
-
 end
 
 game = Hangman.new

@@ -127,7 +127,15 @@ class Hangman
         if @word == @word_teaser.split.join
           
           puts hm_art('victoryscreen.txt').colorize(:yellow)
+          puts "The hidden word was: #{@word}".colorize(:light_blue)
           puts "Wow! Congratulations.. you have won this round!".colorize(:light_green)
+          puts "Would you like to play again? (Y/N)".colorize(:green)
+          if not yes?(gets.chomp)
+            puts "Thanks for playing!".colorize(:green)
+            exit
+          else
+            begin_game
+          end
         else
           make_guess
         end

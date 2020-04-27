@@ -10,6 +10,7 @@ class Hangman
     @word_teaser = " "
     @theme = ""
     @letters_chosen = []
+    @play_again = true
 
   end
 
@@ -103,6 +104,7 @@ class Hangman
     @word_teaser = new_teaser.join(' ')
   end
 
+
   def make_guess 
     if @lives > 0
       puts "The Hidden word has #{@word.size} letters."
@@ -123,17 +125,20 @@ class Hangman
         
         
         if @word == @word_teaser.split.join
+          
           puts hm_art('victoryscreen.txt').colorize(:yellow)
           puts "Wow! Congratulations.. you have won this round!".colorize(:light_green)
         else
           make_guess
         end
+  
       else
         @lives -= 1
         clean_terminal
         puts hm_art("#{@lives}livesleft.txt").colorize(:yellow)
         puts "Unlucky, you have #{@lives} lives remaining!".colorize(:light_red)
         puts "#{guess.upcase} is not in the hidden word".colorize(:light_red)
+        
 
         print_teaser
         make_guess  
@@ -141,13 +146,19 @@ class Hangman
     else
       puts "Your word was: #{@word}".colorize(:light_blue)
       puts "GAME OVER!".colorize(:red)
+      puts "Would you like to play again? (Y/N)".colorize(:green)
+     
+      if not yes?(gets.chomp)
+        puts "Thanks for playing!".colorize(:green)
+        exit
+      else
+        begin_game
+      end
+      
     end
   end
 
   def begin_game
-
-    welcome
-    word
     def m1
       @word.size.times do
         str = @word_teaser += "_ ".delete("\n")
@@ -155,6 +166,10 @@ class Hangman
       end
       print_teaser
     end
+    
+    initialize
+    welcome
+    word
     m1
     make_guess
   end

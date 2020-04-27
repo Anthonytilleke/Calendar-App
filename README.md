@@ -47,15 +47,15 @@ Once te player has completed the game without losing all their lives, they will 
 
 However, if the player isnt able to find out what the word is before all their lives are up, they will be shown this screen. It will tell the player that the game has ended, along with the word and a option to play again.
 
-![Hangman terminal app](./docs/hangmandefeat.png)
+![Hangman terminal app](./docs/hangmandefeat.PNG)
 
 If the player decides to not play anymore a message will be shows saying "Thanks for playing!"
 
-![Hangman terminal app](./docs/hangmanplayagainno.png)
+![Hangman terminal app](./docs/hangmanplayagainno.PNG)
 
 If the player chooses to play the game once more they will be brought back to the welcome screen.
 
-![Hangman terminal app](./docs/hangmanwelcomepage.png)
+![Hangman terminal app](./docs/Hangmanwelcomepage.PNG)
 
 ---
 

@@ -148,7 +148,7 @@ class Hangman
     welcome
     word
     def m1
-      @word.size.times do 
+      @word.size.times do
         str = @word_teaser += "_ ".delete("\n")
         puts str
       end

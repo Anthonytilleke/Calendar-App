@@ -117,7 +117,7 @@ class Hangman
       elsif good_guess
         clean_terminal
         puts hm_art("#{@lives}livesleft.txt").colorize(:yellow)
-        puts "Good guess! #{guess.upcase} is in the word".colorize(:green)
+        puts "Good guess! #{guess.upcase} is in the hidden word".colorize(:green)
 
         print_teaser guess
         
@@ -133,6 +133,7 @@ class Hangman
         clean_terminal
         puts hm_art("#{@lives}livesleft.txt").colorize(:yellow)
         puts "Unlucky, you have #{@lives} lives remaining!".colorize(:light_red)
+        puts "#{guess.upcase} is not in the hidden word".colorize(:light_red)
 
         print_teaser
         make_guess  

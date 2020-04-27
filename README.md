@@ -1,4 +1,4 @@
-# **Hangman**
+# **Hangman Terminal App**
 
 ![Hangman terminal app](./docs/hangmanwelcomepage.PNG)
 
@@ -13,6 +13,14 @@
 Hangman is a quick and simple terminal game created with ruby, meant to be played in a command-line interface. 
 
 ---
+
+## Instructions for installation and use
+
+1. Fork or clone this repository down to your local computer
+2. Use the command-line and navigate to `/AnthonyTillekeratne_T1A2/src/`. Once your in the src directory type in `bundle install` in your command-line and press Enter to install
+3. After you have entered in bundle install in your command-line, in the same directory typle in `ruby main.rb` to run the application
+
+--- 
 
 ## Functionality & Screenshots
 
@@ -55,17 +63,9 @@ If the player decides to not play anymore a message will be shows saying "Thanks
 
 If the player chooses to play the game once more they will be brought back to the welcome screen.
 
-![Hangman terminal app](./docs/Hangmanwelcomepage.PNG)
+![Hangman terminal app](./docs/hangmanwelcomepage.PNG)
 
 ---
-
-## Instructions for installation and use
-
-1. Fork or clone this repository down to your local computer
-2. Use the command-line and navigate to `/AnthonyTillekeratne_T1A2/src/`. Once your in the src directory type in `bundle install` in your command-line and press Enter to install
-3. After you have entered in bundle install in your command-line, in the same directory typle in `ruby main.rb` to run the application
-
---- 
 
 ## Design & Planning Process
 
@@ -77,7 +77,13 @@ If the player chooses to play the game once more they will be brought back to th
 
 ## Trello
 
+### Day 1
 ![trelloday1](./docs/trelloday1.PNG)
+
+### Day 2
 ![telloday2](./docs/trelloday2.PNG)
+
+### Day 3
 ![telloday3](./docs/trelloday3.PNG)
 
+---
